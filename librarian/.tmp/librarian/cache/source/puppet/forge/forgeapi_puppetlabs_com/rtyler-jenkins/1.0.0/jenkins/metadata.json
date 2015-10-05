@@ -1,0 +1,87 @@
+{
+  "name": "rtyler-jenkins",
+  "version": "1.0.0",
+  "source": "git://github.com/jenkinsci/puppet-jenkins.git",
+  "author": "R. Tyler Croy <tyler@monkeypox.org>",
+  "license": "Apache 2.0",
+  "summary": "Manage the Jenkins continuous integration service with Puppet",
+  "description": "Manage the Jenkins continuous integration service with Puppet",
+  "project_page": "https://github.com/jenkinsci/puppet-jenkins",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 2.0.0"
+    },
+    {
+      "name": "puppetlabs/apt",
+      "version_requirement": ">= 0.0.3"
+    },
+    {
+      "name": "puppetlabs/java",
+      "version_requirement": ">= 1.0.1"
+    },
+    {
+      "name": "darin/zypprepo",
+      "version_requirement": ">= 1.0.1"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Blimpfile": "98b1e865528e441ec2d65dc7fc602f94",
+    "Gemfile": "019a436acfcda15e98c9b1548ae934d6",
+    "Gemfile.lock": "76318090d48710a79b830970250c536b",
+    "LICENSE": "7d423e80a51a0320567fc3faa3ce3209",
+    "Modulefile": "acad74932a8133b72d52c7165685c9d5",
+    "README.markdown": "253e4f9edb445ee50994f576a024d8c6",
+    "Rakefile": "f01c5d9a0560e11b23aea8dbd0af49c4",
+    "bootstrap.sh": "04fe679bbd3fb79c742e90af88b6e7c6",
+    "features/deb_support.feature": "14789ecdb4e8ffd58195972969a652ce",
+    "features/step_definitions/deb_support_steps.rb": "fac9e21625d1b47338a289b7e77a170e",
+    "features/support/boxes/deb/Vagrantfile": "3b6fe4e29d850d148d0f4029e69d123c",
+    "features/support/boxes/deb/install-puppet-module.sh": "79dda31c04877e19075829f3540d1e31",
+    "features/support/boxes/deb/verify-jenkins-install": "7ac9d96ae93d0fa83b3343f17a0015bc",
+    "features/support/boxes/deb/verify-plugin-install": "2ed9c76590c4d98cc59f99609751255f",
+    "features/support/env.rb": "dcc615ffa3d9a0fba494231d87d33115",
+    "features/support/vagrant.rb": "230b2a693899f0d00ba25c3c499527d5",
+    "lib/facter/jenkins.rb": "df408bfbaa13bd273018f0916d1b1100",
+    "manifests/cli.pp": "7e072572190956dd606764762f8e6571",
+    "manifests/config.pp": "bae2dae7d3a7f1b9ea8e7a5f6c22bbac",
+    "manifests/firewall.pp": "6026737c479aa806b9bf79835f606b0d",
+    "manifests/init.pp": "533fd00f02d577bddee71cc2e1e9cbf7",
+    "manifests/master.pp": "e676848afcea549ca4c4a666b8629be9",
+    "manifests/package.pp": "0880235f6f8dbae4c0f20a0dc09a7a3f",
+    "manifests/params.pp": "25ff112be31a4dda88eb06a1849a32a3",
+    "manifests/plugin.pp": "1c1569cd3bad95f31f494bfa58fea722",
+    "manifests/plugins.pp": "21881cae3bc7c7c2d1a9e727d2fec910",
+    "manifests/proxy.pp": "a8c3f880c4d870eb9424def5816fc937",
+    "manifests/repo/debian.pp": "522a53a7f2b38c9c17046757bd58d5f4",
+    "manifests/repo/el.pp": "1d29b5fe202a1248a33dd75183d2d7ca",
+    "manifests/repo/suse.pp": "277a69f9c4729fdb742803641c072606",
+    "manifests/repo.pp": "d7c174c45cc3effdfcea79a8a2ce0c5d",
+    "manifests/service.pp": "c382a49f43b10ff8285e25b31d84deca",
+    "manifests/slave.pp": "3b112899989d627cdc2ea3b313a3b2db",
+    "manifests/sysconfig.pp": "ef37d610915a28129ca5dc464b40d2a6",
+    "spec/classes/jenkins_cli_spec.rb": "86afa96faf906d0c44c5d470aa061d39",
+    "spec/classes/jenkins_config_spec.rb": "ebece06167b244e38417031fdb6fffa7",
+    "spec/classes/jenkins_firewall_spec.rb": "7944d257afe350053a33126e5dd0050f",
+    "spec/classes/jenkins_master_spec.rb": "73da92063a6dcff7da64490192fb7277",
+    "spec/classes/jenkins_package_spec.rb": "623c98f032c637e077199fabcd264c76",
+    "spec/classes/jenkins_plugins_spec.rb": "1a1b659f4a3b14e641c7b9eecfebd10f",
+    "spec/classes/jenkins_proxy_spec.rb": "7d61300b6ca51097d7a99eb57a25c200",
+    "spec/classes/jenkins_repo_debian_spec.rb": "2ccdf2721f390e19b49e6dbfd73bc70d",
+    "spec/classes/jenkins_repo_el_spec.rb": "89c298f444187db09f9a0574e7c934c0",
+    "spec/classes/jenkins_repo_spec.rb": "011553823b62be9163cce95f442e8f55",
+    "spec/classes/jenkins_repo_suse_spec.rb": "070df19bcb5a4262ced37d56d1d952c9",
+    "spec/classes/jenkins_service_spec.rb": "67b81099ba7389dff29ffca906ff4659",
+    "spec/classes/jenkins_slave_spec.rb": "1fe2d6a51daf71c312c45c7d64154dfc",
+    "spec/classes/jenkins_spec.rb": "3b1668822bd3e97b1507aa1571bedec2",
+    "spec/defines/jenkins_plugin_spec.rb": "6bb123bad75d988c42edc7ecec7545f6",
+    "spec/defines/jenkins_sysconfig_spec.rb": "c6596db452a66fa42597e98cb487175e",
+    "spec/spec_helper.rb": "445dc8e2897fc75eab9a7a94d834c0ae",
+    "spec/unit/plugins_spec.rb": "ba2413f7af52e082cc0affd8bfa4a1d3",
+    "templates/jenkins-slave.erb": "85c3c85b9fd21608faa513e48663972b",
+    "templates/proxy.xml.erb": "dfef4c527c04c51bd002c02f6b5f9d4e"
+  }
+}

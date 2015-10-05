@@ -29,4 +29,12 @@ Vagrant.configure(2) do |config|
     monitor_config.vm.network :private_network, :ip => "192.168.33.14"
   end
 
+  config.vm.define :ci do |build_config|
+    build_config.vm.network :private_network, :ip => "192.168.33.16"
+    build_config.vm.provision "puppet" do |puppet|
+      puppet.module_path = ["modules","librarian/modules"]
+      puppet.manifest_file = "ci.pp"
+    end
+  end
+
 end

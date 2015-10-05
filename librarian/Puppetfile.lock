@@ -1,10 +1,19 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
+    darin-zypprepo (1.0.2)
     puppetlabs-apt (1.4.0)
       puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-java (1.4.1)
+      puppetlabs-stdlib (< 5.0.0, >= 2.4.0)
     puppetlabs-stdlib (4.9.0)
+    rtyler-jenkins (1.0.0)
+      darin-zypprepo (>= 1.0.1)
+      puppetlabs-apt (>= 0.0.3)
+      puppetlabs-java (>= 1.0.1)
+      puppetlabs-stdlib (>= 2.0.0)
 
 DEPENDENCIES
   puppetlabs-apt (= 1.4.0)
+  rtyler-jenkins (= 1.0.0)
 
