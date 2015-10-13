@@ -27,4 +27,13 @@ class loja_virtual::ci {
 
   jenkins::plugin { $plugins: }
 
+  file { '/var/lib/jenkins/hudson.tasks.Maven.xml':
+    mode    => 0644,
+    owner   => 'jenkins',
+    group   => 'jenkins',
+    source  => 'puppet:///modules/loja_virtual/hudson.tasks.Maven.xml',
+    require => Class['jenkins::package'],
+    notify  => Service['jenkins'],
+  }
+
 }
